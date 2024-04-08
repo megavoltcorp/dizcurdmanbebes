@@ -15,13 +15,21 @@ class gen():
     def __init__(self):
         self.groups = [
             {
-                "partTypes": ["background", "eyes"],
-                "count": 3
+                "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose", "Clothes", "Hat"],
+                "count": 100
             },
-            {
-                "partTypes": ["background2", "eyes"],
-                "count": 10
-            }
+            # {
+            #     "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose",  "Clothes", "Hair"],
+            #     "count": 20
+            # },
+            # {
+            #     "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose"],
+            #     "count": 30
+            # },
+            # {
+            #     "partTypes": ["Honorary"],
+            #     "count": 2
+            # },
         ]
         self.check_path_requirements()
         self.sem = Semaphore(100)

@@ -3,9 +3,9 @@ import random
 import json
 import shutil
 
-def shuffle_and_rename(images_dir, metadata_dir, project_name, base_uri="[[baseUri]]"):
-    # Get all image filenames sorted numerically
-    image_files = sorted(os.listdir(images_dir), key=lambda f: int(os.path.splitext(f)[0]))
+def shuffle_and_rename(images_dir, metadata_dir, project_name):
+    # Filter out files that do not have a purely numeric name before the extension
+    image_files = [f for f in os.listdir(images_dir) if f.replace('.png', '').isdigit()]
     total_files = len(image_files)
 
     # Generate new shuffled indices
@@ -18,8 +18,8 @@ def shuffle_and_rename(images_dir, metadata_dir, project_name, base_uri="[[baseU
         temp_name = temp_image_format.format(index + 1)
         shutil.move(os.path.join(images_dir, file), os.path.join(images_dir, temp_name))
 
-    # Rename metadata files to temporary names to avoid conflicts
-    metadata_files = sorted(os.listdir(metadata_dir), key=lambda f: int(os.path.splitext(f)[0]))
+    # Filter and sort metadata files numerically
+    metadata_files = [f for f in os.listdir(metadata_dir) if f.replace('.json', '').isdigit()]
     temp_metadata_format = "temp_{}.json"
     for index, file in enumerate(metadata_files):
         temp_name = temp_metadata_format.format(index + 1)
@@ -44,7 +44,7 @@ def shuffle_and_rename(images_dir, metadata_dir, project_name, base_uri="[[baseU
 
             # Update the 'name' and 'image' attributes in the JSON file
             metadata['name'] = f"{project_name} #{new_index}"
-            metadata['image'] = f"{base_uri}/{new_image_name}"
+            metadata['image'] = f"{project_name}/{new_image_name}"
 
             with open(new_metadata_path, 'w') as file:
                 json.dump(metadata, file, indent=4)

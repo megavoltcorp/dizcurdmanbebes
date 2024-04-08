@@ -26,7 +26,7 @@ class gen():
         self.check_path_requirements()
         self.sem = Semaphore(100)
         self.project_name = 'dizcurd manbebes'
-        self.description = 'A weird name for a usually hot guy all the ugly people want to go out with and all the pretty people want to hang with.'
+        self.description = 'Ever since i decided to become an nft inbestur in nfts, i became an inbestur... and i like sports 2 becuz i collect picturz on the inturnet an make fwens n dizcurd itz my favurite part of the day, im a man! Dont make me a mad baby cuz ill take screenshots and post my feelings on X, and tell my fwen dms how manly i am... cause thats wut mans do. When we entur da room we stick tugether lyke buttcheeks.'
 
     def check_path_requirements(self):
         required_paths = ['assets', 'output', 'output/images', 'output/metadata']

@@ -28,7 +28,7 @@ class gen():
             },
             {
                 "partTypes": ["Special"],
-                "count": 6
+                "count": 7
             },
             {
                 "partTypes": ["Honorary"],

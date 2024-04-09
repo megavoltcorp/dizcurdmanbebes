@@ -18,18 +18,18 @@ class gen():
                 "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose", "Clothes", "Hat"],
                 "count": 100
             },
-            # {
-            #     "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose",  "Clothes", "Hair"],
-            #     "count": 20
-            # },
-            # {
-            #     "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose"],
-            #     "count": 30
-            # },
-            # {
-            #     "partTypes": ["Honorary"],
-            #     "count": 2
-            # },
+            {
+                "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose",  "Clothes", "Hair"],
+                "count": 40
+            },
+            {
+                "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose"],
+                "count": 30
+            },
+            {
+                "partTypes": ["Honorary"],
+                "count": 2
+            },
         ]
         self.check_path_requirements()
         self.sem = Semaphore(100)

@@ -15,16 +15,16 @@ class gen():
     def __init__(self):
         self.groups = [
             {
-                "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose", "Clothes", "Hat"],
-                "count": 50
+                "partTypes": ["Background", "Type", "Hat", "Mouth", "Eyes", "Nose", "Clothes"],
+                "count": 20
             },
             {
-                "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose",  "Clothes", "Hair"],
+                "partTypes": ["Background", "Type",  "Hair", "Mouth", "Eyes", "Nose",  "Clothes"],
                 "count": 20
             },
             {
                 "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose"],
-                "count": 10
+                "count": 20
             },
             {
                 "partTypes": ["Special"],

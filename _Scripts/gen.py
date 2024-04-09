@@ -16,19 +16,19 @@ class gen():
         self.groups = [
             {
                 "partTypes": ["Background", "Type", "Hat", "Mouth", "Eyes", "Nose", "Clothes"],
-                "count": 60
+                "count": 10
             },
             {
                 "partTypes": ["Background", "Type",  "Hair", "Mouth", "Eyes", "Nose",  "Clothes"],
-                "count": 40
+                "count": 10
             },
             {
                 "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose"],
-                "count": 20
+                "count": 10
             },
             {
                 "partTypes": ["Special"],
-                "count": 7
+                "count": 6
             },
             {
                 "partTypes": ["Honorary"],

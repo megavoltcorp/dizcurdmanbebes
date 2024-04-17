@@ -16,11 +16,11 @@ class gen():
         self.groups = [
             {
                 "partTypes": ["Background", "Type", "Hat", "Mouth", "Eyes", "Nose", "Clothes"],
-                "count": 10
+                "count": 25
             },
             {
                 "partTypes": ["Background", "Type",  "Hair", "Mouth", "Eyes", "Nose",  "Clothes"],
-                "count": 10
+                "count": 25
             },
             {
                 "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose"],
@@ -118,6 +118,13 @@ class gen():
                 file_index += 1  # Increment the file_index after each NFT is generated
                 bar.next()
             bar.finish()
+        print("NFT generation completed.")
+
+    def randomize_output(self):
+        from rando import shuffle_and_rename  # Import here to avoid circular imports
+        images_dir = './output/images'
+        metadata_dir = './output/metadata'
+        shuffle_and_rename(images_dir, metadata_dir, self.project_name)
 
 class join_images(Thread):
     def __init__(self, layers, output, sem):
@@ -135,6 +142,6 @@ class join_images(Thread):
         base_image.save(self.output, 'PNG')
         self.sem.release()
 
-# Run the generator
-generator = gen()
-generator.run()
+if __name__ == "__main__":
+    generator = gen()
+    generator.run()

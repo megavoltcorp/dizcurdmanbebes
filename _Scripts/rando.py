@@ -40,7 +40,7 @@ def shuffle_and_rename(images_dir, metadata_dir, project_name, base_uri="[[baseU
 def main():
     images_dir = './output/images'
     metadata_dir = './output/metadata'
-    project_name = 'dizcurd manbebes'
+    project_name = 'community membooors'
     shuffle_and_rename(images_dir, metadata_dir, project_name)
 
 if __name__ == "__main__":

@@ -16,19 +16,19 @@ class gen():
         self.groups = [
             {
                 "partTypes": ["Background", "Type", "Hat", "Mouth", "Eyes", "Nose", "Clothes"],
-                "count": 25
+                "count": 2100
             },
             {
                 "partTypes": ["Background", "Type",  "Hair", "Mouth", "Eyes", "Nose",  "Clothes"],
-                "count": 25
+                "count": 2345
             },
             {
                 "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose"],
-                "count": 10
+                "count": 546
             },
             {
                 "partTypes": ["Special"],
-                "count": 6
+                "count": 7
             },
             {
                 "partTypes": ["Honorary"],
@@ -37,8 +37,8 @@ class gen():
         ]
         self.check_path_requirements()
         self.sem = Semaphore(100)
-        self.project_name = 'dizcurd manbebes'
-        self.description = 'Ever since i decided to become an nft inbestur in nfts, i became an inbestur... and i like sports 2 becuz i collect picturz on the inturnet an make fwens n dizcurd itz my favurite part of the day, im a man! Dont make me a mad baby cuz ill take screenshots and post my feelings on X, and tell my fwen dms how manly i am... cause thats wut mans do. When we entur da room we stick tugether lyke buttcheeks.'
+        self.project_name = 'Community Membooors'
+        self.description = 'Eber since I became a Community Membooors, i jumped rite into da NFT wurld. I colect picshurz on da inturnet, hang out wit my fwens on Discurd, an its da bestest part of my day. Bein a Membooor means i stan tuff wit my crew. If somthin makez me mad, u bet imma post my feelz on X an tell my fwens in DMz — cuz das wut Membooors do. We stick togethur like… like buttcheeks!! No one can brake our bond, we da pudgiest crew on da inturnet!!'
 
     def check_path_requirements(self):
         required_paths = ['assets', 'output', 'output/images', 'output/metadata']

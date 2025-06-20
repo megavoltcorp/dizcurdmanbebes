@@ -16,15 +16,15 @@ class gen():
         self.groups = [
             {
                 "partTypes": ["Background", "Type", "Hat", "Mouth", "Eyes", "Nose", "Clothes"],
-                "count": 2100
+                "count": 350
             },
             {
                 "partTypes": ["Background", "Type",  "Hair", "Mouth", "Eyes", "Nose",  "Clothes"],
-                "count": 2345
+                "count": 350
             },
             {
                 "partTypes": ["Background", "Type", "Mouth", "Eyes", "Nose"],
-                "count": 546
+                "count": 290
             },
             {
                 "partTypes": ["Special"],
@@ -37,8 +37,8 @@ class gen():
         ]
         self.check_path_requirements()
         self.sem = Semaphore(100)
-        self.project_name = 'Community Membooors'
-        self.description = 'Eber since I became a Community Membooors, i jumped rite into da NFT wurld. I colect picshurz on da inturnet, hang out wit my fwens on Discurd, an its da bestest part of my day. Bein a Membooor means i stan tuff wit my crew. If somthin makez me mad, u bet imma post my feelz on X an tell my fwens in DMz — cuz das wut Membooors do. We stick togethur like… like buttcheeks!! No one can brake our bond, we da pudgiest crew on da inturnet!!'
+        self.project_name = 'DizcurdManBebes'
+        self.description = 'Eber since I became a Dizcurd ManBebes, i jumped rite into da NFT wurld. I collerct picshurz on da inturnet, hang out wit my fwens on Discurd, an its da bestest part of my day. Bein a ManBebe means i stan tuff wit my crew. If somthin makez me mad, u bet imma post my feelz on X an tell my fwens in DMz — cuz das wut Membooors do. We stick togethur like… like buttcheeks!! No one can brake our bond, we da pudgiest crew on da inturnet!!'
 
     def check_path_requirements(self):
         required_paths = ['assets', 'output', 'output/images', 'output/metadata']
